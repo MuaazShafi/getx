@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/screen_get_builder.dart';
 import 'package:getx/screen_home.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
-      home: ScreenHome(),
+      home: ScreenGetBuilder(),
     );
   }
 }
