@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/controller_xyz.dart';
+import 'package:getx/screen_new_page.dart';
 
 class ScreenGetBuilder extends StatelessWidget {
   XYZ controller = Get.put(XYZ());
@@ -34,7 +35,13 @@ class ScreenGetBuilder extends StatelessWidget {
                   },
                 );
               },
-            )
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(() => ScreenNewPage());
+              },
+              child: Text("Next Page"),
+            ),
           ],
         ),
       ),
